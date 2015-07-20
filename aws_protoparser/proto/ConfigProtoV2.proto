@@ -1,0 +1,23 @@
+message ConfigV2_Nested {
+	optional int32 Int32Test = 1;
+	optional string StringTest = 2;
+}
+
+// This can be used for various purposes, but the base configuration
+// here is designed to be used from the commandline.
+message ConfigV2 {
+
+	// From the proto docs
+	enum EnumAllowingAlias {
+		option allow_alias = true;
+		UNKNOWN = 0;
+		STARTED = 1;
+		RUNNING = 1;
+	};
+
+	optional string StringTest = 1;
+	optional EnumAllowingAlias EnumTest = 2;
+	optional double DoubleTest = 3;
+	optional float FloatTest = 4;
+	optional ConfigV2_Nested Nested = 5;
+}
