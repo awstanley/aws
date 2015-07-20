@@ -33,9 +33,9 @@ No.  You are free to use it as you wish.
 
 I was largely by Sean T. Barrett (stb), and have released the above as-is for the following reasons:
 
-#. Windows has no default include directory, so adding things to a large number of projects can be painful.  Single file headers dependent only on things noted helps to solve this.
-#. Inline headers are really very simple to integrate when dealing with other things; no linker or runtime related issues should arise.
-#. If you really dislike it you can, easily, move functions to hpp/cpp files.
+* Windows has no default include directory, so adding things to a large number of projects can be painful.  Single file headers dependent only on things noted helps to solve this.
+* Inline headers are really very simple to integrate when dealing with other things; no linker or runtime related issues should arise.
+* If you really dislike it you can, easily, move functions to hpp/cpp files.
 
 
 #### Why aws?
