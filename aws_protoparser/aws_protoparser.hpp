@@ -938,7 +938,7 @@ namespace aws {
 // Remove helpers
 #undef MESSAGE
 #undef DESCRIPTOR
-#undef refl
+#undef REFLECTION
 #undef FIELDDESC
 
 #endif // _AWS_PROTOPARSER_HPP_
